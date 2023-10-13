@@ -1,8 +1,8 @@
-package ejercicios;
+package tema2boletin1;
 
 import java.util.Scanner;
 
-public class Ejercicio6 {
+public class Ejercicio06 {
 
 	public static void main(String[] args) {
 	    

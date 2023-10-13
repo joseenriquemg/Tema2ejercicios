@@ -1,8 +1,8 @@
-package ejercicios;
+package tema2boletin1;
 
 import java.util.Scanner;
 
-public class Ejercicio8 {
+public class Ejercicio08 {
 
 	public static void main(String[] args) {
 		float nota;

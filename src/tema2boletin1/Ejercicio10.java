@@ -1,4 +1,4 @@
-package ejercicios;
+package tema2boletin1;
 
 import java.util.Scanner;
 

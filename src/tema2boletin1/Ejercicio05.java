@@ -1,8 +1,8 @@
-package ejercicios;
+package tema2boletin1;
 
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio05 {
 
 	public static void main(String[] args) {
 		// Creamos las variables
