@@ -3,7 +3,9 @@ package tema2boletin4;
 public class Ejercicio03 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Creamos las variables
+		int num = 1;
+		// Pedimos el numero al usuario
 
 	}
 
