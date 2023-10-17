@@ -16,6 +16,22 @@ public class Ejercicio06 {
 			edadAlumno++;
 			if (edad >= 18) {
 			mayorEdad++;
+			System.out.println("MAYOR DE EDAD.");
+			}else { 
+			System.out.println("MENOR DE EDAD.");
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		}}}}
 
 
