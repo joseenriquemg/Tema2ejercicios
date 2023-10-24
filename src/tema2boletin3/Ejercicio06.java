@@ -20,6 +20,13 @@ public class Ejercicio06 {
 			}else { 
 			System.out.println("MENOR DE EDAD.");
 			
+			sc.close();
+			
+			
+			}
+		}
+	}
+}
 			
 			
 			
@@ -28,10 +35,6 @@ public class Ejercicio06 {
 			
 			
 			
-			
-			
-			
-			
-		}}}}
+		
 
 
