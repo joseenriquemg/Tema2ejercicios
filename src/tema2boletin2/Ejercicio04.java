@@ -18,7 +18,7 @@ public class Ejercicio04 {
 		System.out.println("Introduzca el valor del dado 2");
 		dado2 = sc.next();
 		valor1 = switch (dado1) {
-		case "UNO" ->1;
+		case "UNO" -> 1;
 		case "DOS" -> 2;
 		case "TRES" -> 3;
 		case "CUATRO" -> 4;
@@ -27,7 +27,7 @@ public class Ejercicio04 {
 		default -> 0;
 		};
 		valor2 = switch (dado2) {
-		case "UNO" ->1;
+		case "UNO" -> 1;
 		case "DOS" -> 2;
 		case "TRES" -> 3;
 		case "CUATRO" -> 4;
@@ -38,7 +38,7 @@ public class Ejercicio04 {
 		if (valor1 == 0 || valor2 == 0) {
 			System.out.println("Alguna de las tiradas es errónea");
 		} else {
-			System.out.println("La suma de las tiradas es: " + (valor1+valor2));
+			System.out.println("La suma de las tiradas es: " + (valor1 + valor2));
 		}
 		// Cerramos el Scanner
 		sc.close();

@@ -10,6 +10,7 @@ public class Ejercicio06 {
 		final String PIEDRA = "PIEDRA";
 		final String TIJERAS = "TIJERAS";
 		final String PAPEL = "PAPEL";
+		final String REPETIR = "S";
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -18,21 +19,25 @@ public class Ejercicio06 {
 			do {
 				System.out.println("Jugador 1 elija entre: PIEDRA, PAPEL Y TIJERAS");
 				jugador1 = sc.nextLine();
-			} while (jugador1.equals("PIEDRA") && jugador1.equals("PAPEL") && (jugador1.equals("TIJERAS"))) ;
-			
+			} while (!(jugador1.equals("PIEDRA") || jugador1.equals("PAPEL") || (jugador1.equals("TIJERAS"))));
+
 			do {
 				System.out.println("Jugador 2 elija entre: PIEDRA, PAPEL Y TIJERAS");
 				jugador2 = sc.nextLine();
-			} while (jugador2.equals("PIEDRA") && jugador2.equals("PAPEL") && (jugador2.equals("TIJERAS"))) ;
+			} while (!(jugador2.equals("PIEDRA") || jugador2.equals("PAPEL") || (jugador2.equals("TIJERAS"))));
 
-			if (jugador1 == jugador2) {
+			if (jugador1.equals(jugador2)) {
 				System.out.println("EMPATE");
-			} else if (jugador1 == PIEDRA && jugador2 == PAPEL || jugador1 == PAPEL && jugador2 == PIEDRA
-					|| jugador1 == TIJERAS && jugador2 == PAPEL) {
+			} else if ((jugador1.equals(PIEDRA) && jugador2.equals(PAPEL)) ||
+						(jugador1.equals(PAPEL) && jugador2.equals(TIJERAS)) ||
+						(jugador1.equals(TIJERAS) && jugador2.equals(PIEDRA))) {
 				System.out.println("Gana JUGADOR 2");
-			} else
+			} else {
 				System.out.println("Gana JUGADOR 1");
-		} while (!juego);
+			}
+            System.out.println("¿Quieres volver a jugar? Pulse S.");
+            repetir = sc.nextLine();
+		} while (repetir.equalsIgnoreCase(REPETIR));
 		// Cerramos el Scanner
 		sc.close();
 
